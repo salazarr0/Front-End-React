@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Missão Vingadores - Testes</title>
+</head>
+
+<body>
+    <h1>Abra o console para ver os resultados!</h1>
+    <script>
+        // Cole seu código JavaScript aqui dentro
+        const vingadores = [
+            { nome: "Tony Stark", codinome: "Homem de Ferro", equipe: "Vingadores", status: "Aposentado", nivelPoder: 95 },
+            { nome: "Steve Rogers", codinome: "Capitão América", equipe: "Vingadores", status: "Aposentado", nivelPoder: 90 },
+            { nome: "Natasha Romanoff", codinome: "Viúva Negra", equipe: "Vingadores", status: "Falecida", nivelPoder: 85 },
+            { nome: "Peter Quill", codinome: "Senhor das Estrelas", equipe: "Guardiões da Galáxia", status: "Ativo", nivelPoder: 80 },
+            { nome: "Groot", codinome: "Groot", equipe: "Guardiões da Galáxia", status: "Ativo", nivelPoder: 88 },
+            { nome: "Wanda Maximoff", codinome: "Feiticeira Escarlate", equipe: "Vingadores", status: "Ativo", nivelPoder: 100 },
+            { nome: "T'Challa", codinome: "Pantera Negra", equipe: "Vingadores", status: "Ativo", nivelPoder: 92 },
+        ];
+
+
+        // // Exemplo de exercício:
+        // const nomes = vingadores.map(heroi => heroi.nome);
+        // console.log(nomes);
+
+        // const convocacao = vingadores.map((heroi, index) => {
+        //     console.log(`Convocando ${heroi.codinome} - Protocolo ${index + 1}`);
+        // });
+
+        // const equipeDeResposta = vingadores.filter(heroi => {
+        //     return heroi.equipe === "Vingadores";
+        // });
+        // console.log(equipeDeResposta);
+
+        //Cenario 2b
+        // function simularBatalha() {
+        //     let energia = 100;
+        //     if (energia > 50) {
+        //         const vazamento = true; // Esta informação não deveria vazar
+        //         console.log("Dentro do bloco: Nível de energia alto!");
+        //     }
+
+        //     if (vazamento) {
+        //         console.log("Alerta! Informação de vazamento detectada fora do bloco!");
+        //     }
+        // }
+        // simularBatalha();
+        //cenario 3:
+        
+        const gerarRealatorioDeHeroi = vingadores.map((v)=> `Relatório de Herói: [${v.codinome}] (${v.nome}) - Equipe: [${v.equipe}] - Status: [${v.status}]`);
+        console.log(gerarRealatorioDeHeroi);
+        
+
+
+
+    </script>
+</body>
+
+</html>
